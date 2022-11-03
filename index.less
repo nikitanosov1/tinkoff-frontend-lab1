@@ -247,6 +247,66 @@
   font-feature-settings: 'liga' off;
 }
 
+// structure section
+
+.structure {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.details-wrapper {
+  width: 1104px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+
+details > summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+summary::marker {
+  display: none
+}
+
+summary::after {
+  //content: ' ►';
+  content: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L10.5871 15.0013C11.368 15.7823 12.63 15.7842 13.4129 15.0013L17.7071 10.7071C18.0976 10.3166 18.0976 9.68342 17.7071 9.29289C17.3166 8.90237 16.6834 8.90237 16.2929 9.29289L12 13.5858L7.70711 9.29289Z' fill='%239299A2'/%3E%3C/svg%3E%0A");
+}
+details[open] summary:after {
+  //content: " ▼";
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'%3E%3Cimage id='image0' width='24' height='24' x='0' y='0' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAKlBMVEX////5+frLz9P19faj qbGSmaKlq7L29/f29vf09faorrWorbWssbirsbhb/WOzAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAA YAAAAGAA8GtCzwAAAAd0SU1FB+YLAxIzNzrYe+EAAAA4SURBVBjTY2CgJxBSRLCZXcMK4Jy2sNQM hET6FLiUSVgBp2s6lLMUqKYtGso53cDAwLGWrs5HAgBYOwqRs4mUTQAAACV0RVh0ZGF0ZTpjcmVh dGUAMjAyMi0xMS0wM1QxODo1MTo1NSswMDowMPrAdDoAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjIt MTEtMDNUMTg6NTE6NTUrMDA6MDCLncyGAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIyLTExLTAz VDE4OjUxOjU1KzAwOjAw3IjtWQAAAABJRU5ErkJggg=='/%3E%3C/svg%3E");
+}
+
+.details-wrapper {
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.details-wrapper__text-list {
+  padding-left: 20px;
+}
+
+.details-wrapper__line {
+  height: 1px;
+  width: 912px;
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px #DDDFE0;
+}
+
 // fourth section
 
 .fourth {
