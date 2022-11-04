@@ -1,4 +1,8 @@
-# Empty vite template
+# Лабораторная работа по курсу Frontend-разработчик от Тинькофф
+https://user-images.githubusercontent.com/71886485/200054323-c3c5fb5f-84f2-4b9d-892a-db356bb78520.mp4
+
+
+# Перед выполнением работы:
 
 Предварительно должны быть установлены git и nodejs(версия lts 16 и выше)
 - install node.js v16>(npm v7.x>) (https://nodejs.org/en/download/)
