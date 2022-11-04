@@ -152,6 +152,7 @@
   border-width: 0;
   width: 150px;
   height: 56px;
+  cursor: pointer;
 }
 
 .image-wrapper {
@@ -220,6 +221,9 @@
 }
 
 .vacancy {
+  &:hover {
+    transform: scale(1.02);
+  }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -378,6 +382,11 @@ details[open] summary:after {
 }
 
 .step__step-title-wrapper {
+  &:hover {
+    transform: rotate(360deg);
+  }
+  transition: transform .7s ease-in-out;
+
   position: absolute;
   width: 56px;
   height: 56px;
