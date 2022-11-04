@@ -1,3 +1,54 @@
 import 'normalize.css';
 import './index.less';
 
+var myButton = document.getElementById('form-bottom__button');
+var invalidCityInput = document.getElementById('invalid-city-input');
+var invalidFamNameInput = document.getElementById('invalid-fam-name-input');
+var select = document.getElementById('city-select');
+var nameInput = document.getElementById('fam-name-input');
+var formCheckbox = document.getElementById('form-checkbox');
+
+//add event listener
+myButton.addEventListener('click', async _ => {
+    console.log(select.value);
+
+    let allFieldsIsCorrect = true;
+    if (select.value == "") {
+        select.style.backgroundColor = 'rgba(224, 31, 25, 0.12)';
+        invalidCityInput.style.visibility = 'visible';
+        allFieldsIsCorrect = false;
+    } else {
+        select.style.backgroundColor = '#ECF1F7';
+        invalidCityInput.style.visibility = 'hidden';
+    }
+
+    console.log(nameInput.value);
+    if (nameInput.value == "Фамилия и Имя") {
+        nameInput.style.backgroundColor = 'rgba(224, 31, 25, 0.12)';
+        invalidFamNameInput.style.visibility = 'visible';
+        allFieldsIsCorrect = false;
+    } else {
+        nameInput.style.backgroundColor = '#ECF1F7';
+        invalidFamNameInput.style.visibility = 'hidden';
+    }
+
+    if (!allFieldsIsCorrect) return;
+
+    try {     
+        const response = await fetch('https://www.wikipedia.org/', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                city: select.value,
+                age: nameInput.value,
+                is_agree: formCheckbox.checked
+            })
+        });
+        console.log('Completed!', response);
+    } catch(err) {
+        console.error(`Error: ${err}`);
+    }
+});

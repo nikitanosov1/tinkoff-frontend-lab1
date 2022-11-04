@@ -262,9 +262,10 @@
       </section>
 
       <section class="form-section">
-        <div class="form-container vacancy form-section__form-container">
+        <form id="Fqno2RbMWY5Iv2apqjvYcQAlU9ds1" class="form-container vacancy form-section__form-container">
           <div class="form-container__title title ">Подать заявку</div>
-          <select name="city" id="city-select">
+            
+          <select name="city" id="city-select" form="Fqno2RbMWY5Iv2apqjvYcQAlU9ds1">
             <option value="">Город</option>
             <option value="moskva">Москва</option>
             <option value="petersburg">Санкт-Петербург</option>
@@ -275,16 +276,19 @@
             <option value="perm">Пермь</option>
             <option value="novosibirsk">Новосибирск</option>
           </select>
+          <div id="invalid-city-input">Поле обязательное</div>
+
           <input id="fam-name-input" type="text" required value="Фамилия и Имя">
+          <div id="invalid-fam-name-input">Поле обязательное</div>
+          
           <div class="form-bottom form-container__form-bottom">
             <div class="agree-wrapper">
               <input type="checkbox" name="agree" id="form-checkbox">
               <label class="form-label" for="form-checkbox">Я согласен <span class="form-label__blue-text">с условиями передачи информации</span></label>
             </div>
-            <button class="button">Отправить</button>
+            <button id="form-bottom__button" class="button form-bottom__button" form="Fqno2RbMWY5Iv2apqjvYcQAlU9ds1" type="button">Отправить</button>
           </div>
-
-        </div>
+        </form>
       </section>
 
       <footer class="footer">
