@@ -56,6 +56,6 @@ myButton.addEventListener('click', async _ => {
 // scroll user to form
 var previewButton = document.getElementById('preview-button');
 previewButton.addEventListener('click', function() {
-    document.getElementById("Fqno2RbMWY5Iv2apqjvYcQAlU9ds1").scrollIntoView();
+    document.getElementById("Fqno2RbMWY5Iv2apqjvYcQAlU9ds1").scrollIntoView({behavior: "smooth"});
     //window.scrollTo(1000, 1000);
 });
