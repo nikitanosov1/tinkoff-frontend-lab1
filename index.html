@@ -261,6 +261,32 @@
         </div>
       </section>
 
+      <section class="form-section">
+        <div class="form-container vacancy form-section__form-container">
+          <div class="form-container__title title ">Подать заявку</div>
+          <select name="city" id="city-select">
+            <option value="">Город</option>
+            <option value="moskva">Москва</option>
+            <option value="petersburg">Санкт-Петербург</option>
+            <option value="ryazan">Рязань</option>
+            <option value="rostov-na-dony">Ростов-на-Дону</option>
+            <option value="ekaterinburg">Екатеринбург</option>
+            <option value="samara">Самара</option>
+            <option value="perm">Пермь</option>
+            <option value="novosibirsk">Новосибирск</option>
+          </select>
+          <input id="fam-name-input" type="text" required value="Фамилия и Имя">
+          <div class="form-bottom form-container__form-bottom">
+            <div class="agree-wrapper">
+              <input type="checkbox" name="agree" id="form-checkbox">
+              <label class="form-label" for="form-checkbox">Я согласен <span class="form-label__blue-text">с условиями передачи информации</span></label>
+            </div>
+            <button class="button">Отправить</button>
+          </div>
+
+        </div>
+      </section>
+
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__line"></div>
@@ -277,7 +303,7 @@
           </div>
         </div>
       </footer>
-    
+
       <script type="module" src="./main.js"></script>
     </div>
   </body>
