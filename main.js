@@ -8,7 +8,7 @@ var select = document.getElementById('city-select');
 var nameInput = document.getElementById('fam-name-input');
 var formCheckbox = document.getElementById('form-checkbox');
 
-//add event listener
+//add event listener on form
 myButton.addEventListener('click', async _ => {
     console.log(select.value);
 
@@ -51,4 +51,11 @@ myButton.addEventListener('click', async _ => {
     } catch(err) {
         console.error(`Error: ${err}`);
     }
+});
+
+// scroll user to form
+var previewButton = document.getElementById('preview-button');
+previewButton.addEventListener('click', function() {
+    document.getElementById("Fqno2RbMWY5Iv2apqjvYcQAlU9ds1").scrollIntoView();
+    //window.scrollTo(1000, 1000);
 });
