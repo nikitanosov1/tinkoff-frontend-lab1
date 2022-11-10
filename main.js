@@ -31,23 +31,23 @@ myButton.addEventListener('click', async _ => {
 
     if (!allFieldsIsCorrect) return;
 
-    try {     
-        const response = await fetch('https://www.wikipedia.org/', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                city: select.value,
-                age: nameInput.value,
-                is_agree: isActiveCheckbox
-            })
-        });
-        console.log('Completed!', response);
-    } catch(err) {
-        console.error(`Error: ${err}`);
-    }
+         
+    const response = await fetch('https://www.wikipedia.org/', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            city: select.value,
+            name: nameInput.value,
+            is_agree: isActiveCheckbox
+        })
+    })
+    .then(console.log('Completed!', response))
+    .catch(error => {
+        alert(error); // Error: Not Found
+    });
 });
 
 // scroll user to form
