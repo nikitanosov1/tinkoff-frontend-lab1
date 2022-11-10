@@ -23,7 +23,7 @@ myButton.addEventListener('click', async _ => {
     }
 
     console.log(nameInput.value);
-    if (nameInput.value == "Фамилия и Имя") {
+    if (nameInput.value == "") {
         nameInput.style.backgroundColor = 'rgba(224, 31, 25, 0.12)';
         invalidFamNameInput.style.visibility = 'visible';
         allFieldsIsCorrect = false;

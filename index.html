@@ -269,7 +269,7 @@
           <h1 class="form-container__title title ">Подать заявку</h1>
             
           <select name="city" id="city-select" form="Fqno2RbMWY5Iv2apqjvYcQAlU9ds1">
-            <option value="">Город</option>
+            <option disabled selected hidden value="">Город</option>
             <option value="moskva">Москва</option>
             <option value="petersburg">Санкт-Петербург</option>
             <option value="ryazan">Рязань</option>
@@ -281,7 +281,9 @@
           </select>
           <div id="invalid-city-input">Поле обязательное</div>
 
-          <input id="fam-name-input" type="text" required value="Фамилия и Имя">
+          <label id="fam-name-label">
+            <input id="fam-name-input" type="text" required placeholder="Фамилия и Имя">
+          </label>
           <div id="invalid-fam-name-input">Поле обязательное</div>
 
           <div class="form-bottom form-container__form-bottom">
