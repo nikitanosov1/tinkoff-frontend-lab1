@@ -1,12 +1,12 @@
 import 'normalize.css';
 import './index.less';
 
-var myButton = document.getElementById('form-bottom__button');
-var invalidCityInput = document.getElementById('invalid-city-input');
-var invalidFamNameInput = document.getElementById('invalid-fam-name-input');
-var select = document.getElementById('city-select');
-var nameInput = document.getElementById('fam-name-input');
-var formCheckbox = document.getElementById('form-checkbox');
+let myButton = document.getElementById('form-bottom__button');
+let invalidCityInput = document.getElementById('invalid-city-input');
+let invalidFamNameInput = document.getElementById('invalid-fam-name-input');
+let select = document.getElementById('city-select');
+let nameInput = document.getElementById('fam-name-input');
+let formCheckbox = document.getElementById('form-checkbox');
 
 //add event listener on form
 myButton.addEventListener('click', async _ => {
@@ -54,7 +54,7 @@ myButton.addEventListener('click', async _ => {
 });
 
 // scroll user to form
-var previewButton = document.getElementById('preview-button');
+let previewButton = document.getElementById('preview-button');
 previewButton.addEventListener('click', function() {
     document.getElementById("Fqno2RbMWY5Iv2apqjvYcQAlU9ds1").scrollIntoView({behavior: "smooth"});
     //window.scrollTo(1000, 1000);
