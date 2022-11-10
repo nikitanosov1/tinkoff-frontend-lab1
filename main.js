@@ -31,7 +31,6 @@ myButton.addEventListener('click', async _ => {
 
     if (!allFieldsIsCorrect) return;
 
-         
     const response = await fetch('https://www.wikipedia.org/', {
         method: 'POST',
         headers: {
